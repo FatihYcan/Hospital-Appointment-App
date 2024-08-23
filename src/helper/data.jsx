@@ -1,3 +1,5 @@
+// data.jsx
+
 export const appointmentData = [
   {
     id: 1,
@@ -5,6 +7,7 @@ export const appointmentData = [
     day: new Date(),
     consulted: true,
     doctor: "Dr. Hazel Valery",
+    dep: "Cardiology",
   },
   {
     id: 2,
@@ -12,6 +15,7 @@ export const appointmentData = [
     day: new Date(),
     consulted: false,
     doctor: "Dr. Jessica White",
+    dep: "Surgery",
   },
   {
     id: 3,
@@ -19,8 +23,9 @@ export const appointmentData = [
     day: new Date(),
     consulted: true,
     doctor: "Dr. Jasmine Carpanter",
+    dep: "Radiolgy",
   },
-]
+];
 
 export const doctorData = [
   {
@@ -71,4 +76,4 @@ export const doctorData = [
     dep: "Oncology",
     img: "./img/dr8.jpg",
   },
-]
+];

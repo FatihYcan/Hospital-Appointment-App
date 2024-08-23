@@ -1,15 +1,26 @@
+// AddModal.jsx
+
 import { useState } from "react";
 import { Form } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
-function AddModal({ show, handleClose, drName }) {
+function AddModal({ show, handleClose, drName, handleAdd, drDep }) {
   const [name, setName] = useState("");
   const [date, setDate] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, date);
+    const newAppointment = {
+      id: new Date().getTime(),
+      patient: name,
+      day: date,
+      consulted: false,
+      doctor: drName,
+      dep: drDep,
+    };
+    handleAdd(newAppointment);
+    // console.log(name, date);
   };
 
   return (
