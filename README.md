@@ -38,4 +38,6 @@ Bu proje, hastane randevu işlemlerini yönetmek amacıyla geliştirilmiş basit
 - Bootstrap
 - React Icons
 
+  https://github.com/user-attachments/assets/508763fb-c69f-4aeb-b9c6-3ecc748d1196
+
 [Live](https://fy-hospital-appointment-app.netlify.app/)
